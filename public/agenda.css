@@ -1,0 +1,16 @@
+body{
+    display: flex;
+    position: relative;
+    overflow-x: hidden;
+
+}
+.agenda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+svg{
+    height: 100vh;
+    width: auto;
+
+}

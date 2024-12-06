@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+background-color: black;
+    color: white;
+    display: flex;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.glassy-container {
+    justify-self: center;
+    align-self: center;
+    width: 80%;
+    height: 100%;
+    padding: 20px;
+    margin: 20px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+    z-index: 1; 
+}
+
+.titles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.main-title {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.secondary-titles {
+    text-align: right;
+}
+
+.secondary-title {
+    font-size: 20px;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 500;
+}
+
+.video-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+
+.arrow {
+    background: none;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 10px 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+button {
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.video-wrapper {
+    width: 80%;
+    border-radius: 20px;
+    max-width: 1200px;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    position: relative;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}

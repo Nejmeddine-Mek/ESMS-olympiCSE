@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>olympiCSE</title>
+    <link rel="icon" href="./assets/logo.sans 1.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1 style="align-self: center; font-size: 4rem;padding-top: 50px; text-shadow: 0 0 15px rgba(255, 255, 255, 0.719);">olympiCSE</h1>
+        <ul class="listOfOptions">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./index.html#event-explanation">About</a></li>
+            <li><a href="./liveStream.html">Live Stream</a></li>
+            <li><a href="./agenda.html">Agenda</a></li>
+            <li><a href="./scoreboard.html">Scoreboard</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="./registration.html" class="active" style="color: #E5DC18;">Registrations</a></li>
+        </ul>
+    </nav>
+
+    <form id="regForm">
+        <h1>Registration Form</h1>
+        <div id="form-group">
+            <div class="field">
+                <label>First Name</label>
+                <input type="text" class="info">
+            </div>
+
+            <div class="field">
+                <label>Last Name</label>
+                <input type="text" class="info">
+            </div>
+
+            <div class="field">
+                <label>Email</label>
+                <input type="email" class="info">
+            </div>
+            <!------------------------------------------------>
+
+            <div class="field">
+                <label>School/Uni</label>
+                <select class="info">
+                    <option selected disabled>choose your school</option>
+                    <option value="ESI">ESI</option>
+                    <option value="USTHB">USTHB</option>
+                </select>
+            </div>
+
+            <div class="field">
+                <label>Year</label>
+                <select class="info">
+                    <option selected disabled>choose your academic level</option>
+                    <option value="L1/1CP">L1/1CP</option>
+                    <option value="L2/2CP">L2/2CP</option>
+                    <option value="L3/1CS">L3/1CS</option>
+                    <option value="M1/2CS">M1/2CS</option>
+                    <option value="M2/3CS">M2/3CS</option>
+                </select>
+            </div>
+
+            <div class="field">
+                <label>Category</label>
+                <select class="info">
+                    <option selected disabled>choose your Category</option>
+                    <option value="Senior">Junior</option>
+                    <option value="Junior">Senior</option>
+                </select>
+            </div>
+            <!------------------------------------------------>
+            <div class="field">
+                <label>Department</label>
+                <select class="info" id="department">
+                    <option selected disabled>choose your department</option>
+                    <option >Design</option>
+                    <option >Development</option>
+                    <option >Multimedia</option>
+                </select>
+            </div>
+
+            <div class="field">
+                <label>Discipline</label>
+                <select id="disciplineSelect" aria-placeholder="" class="info">
+                    <option value="choose your discipline" selected disabled>choose your department first</option>
+
+                </select>
+            </div>
+            <div class="field">
+                <label>Useful links</label>
+                <input type="text" class="info">
+            </div>
+        </div>
+        <div class="field" id="motivation">
+            <label>Motivation</label>
+            <textarea name="Motivation" id="motivation" class="info"></textarea>
+        </div>
+        <!-------------------------------------------------------------------------------------->
+        <button type="submit" id="submitBtn" onclick="submitInformation()">Buckle up already</button>
+   </form>
+   <div id="contact"class="footer">
+    <div class="footer-card top-left">
+        <div class="container">
+            <div class="card-content">
+                <h2 class="card-title">CONTACT US</h2>
+                <ul class="bullet-points">
+                    <li>Email: example@cse.com</li>
+                    <li>Phone Num: +213 777 77 77 77 77</li>
+                    <li>Address: ESI, Oued Smar, Algiers</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-card top-right">
+        <div class="container">
+            <div class="image-text-wrapper">
+                <img src="assets/logoWhite.svg" alt="Description" class="card-image">
+                <strong class="card-text">LE CLUB<br>SCIENTIFIQUE<br>DE L'ESI</strong>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-card bottom-left">
+        <div class="container">
+            <p class="quote">"Made with talent, to discover yours"</p>
+            </div>
+    </div>
+    <div class="footer-card bottom-right">
+        <div class="container">
+        <div class="countdown-container">
+            <div class="countdown">
+                <div class="time-unit">
+                    <span id="days" class="number">00</span>
+                    <span class="label">Days</span>
+                </div>
+                <div class="time-unit">
+                    <span id="hours" class="number">00</span>
+                    <span class="label">Hours</span>
+                </div>
+                <div class="time-unit">
+                    <span id="minutes" class="number">00</span>
+                    <span class="label">Minutes</span>
+                </div>
+                <div class="time-unit">
+                    <span id="seconds" class="number">00</span>
+                    <span class="label">Seconds</span>
+                </div>
+                <span class="left-text">Left</span>
+            </div>
+            <a href="./registration.html" class="register-button">Buckle Up Now!</a>
+        </div>
+    </div>
+        
+    </div>
+
+
+</div>
+
+
+   <div class="background-image" style="height: 800px; width: 100%;  top: 0%;  left: 50%; z-index: -10;">
+    <svg width="725" height="487" viewBox="0 0 725 487" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g filter="url(#filter0_f_43_39)">
+        <rect x="422.632" y="-121" width="291" height="288" transform="rotate(50.6266 422.632 -121)" fill="#6FC686"/>
+        </g>
+        <defs>
+        <filter id="filter0_f_43_39" x="0" y="-321" width="807.234" height="807.65" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+        <feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_43_39"/>
+        </filter>
+        </defs>
+        </svg>
+   </div>
+   <div class="background-image" style="height: 700px; width: 100%;  top: 10%;left: -2%; opacity: 50%; z-index: -10;">
+    <svg width="383" height="787" viewBox="0 0 383 787" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g filter="url(#filter0_f_43_38)">
+        <rect x="-2.36816" y="179" width="291" height="288" transform="rotate(50.6266 -2.36816 179)" fill="#0177FB"/>
+        </g>
+        <defs>
+        <filter id="filter0_f_43_38" x="-425" y="-21" width="807.235" height="807.65" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+        <feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_43_38"/>
+        </filter>
+        </defs>
+        </svg>
+        
+   </div>
+   <div class="background-image"  style="height: 750px; width: auto; opacity: 70%; z-index: -10; left: 75%;">
+    <svg width="415" height="808" viewBox="0 0 415 808" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g filter="url(#filter0_f_43_40)">
+        <rect x="422.632" y="200" width="291" height="288" transform="rotate(50.6266 422.632 200)" fill="#FB3B52"/>
+        </g>
+        <defs>
+        <filter id="filter0_f_43_40" x="0" y="0" width="807.234" height="807.65" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+        <feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_43_40"/>
+        </filter>
+        </defs>
+        </svg>
+        
+   </div>  
+   <div class="background-image" style="height: 700px; width: 100%;  bottom: -17%;  background-image: url('assets/footer.png');"></div>
+<script src="./index.js">
+</script>
+</body>
+</html>

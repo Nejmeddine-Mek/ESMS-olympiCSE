@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LiveStream</title>
+    <link rel="stylesheet" href="liveStream.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="./assets/logo.sans 1.png" type="image/png">
+</head>
+<body>
+    <nav class="navbar">
+        <h1 style="align-self: center; font-size: 4rem;padding-top: 50px; text-shadow: 0 0 15px rgba(255, 255, 255, 0.719);">olympiCSE</h1>
+        <ul class="listOfOptions">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./index.html#event-explanation">About</a></li>
+            <li><a href="./liveStream.html" style="color: #E5DC18;">Live Stream</a></li>
+            <li><a href="./agenda.html">Agenda</a></li>
+            <li><a href="./scoreboard.html">Scoreboard</a></li>
+            <li><a href="./index.html#contact">Contact Us</a></li>
+            <li><a href="./registration.html" class="active">Registrations</a></li>
+        </ul>
+    </nav>
+    
+    <div class="glassy-container">
+        
+        
+        <div class="titles">
+            <h1 id="main-title" class="main-title">Design</h1>
+            <div class="secondary-titles">
+                <h2 id="secondary-title-1" class="secondary-title">VI Design</h2>
+                <h2 id="secondary-title-2" class="secondary-title">Stage 01</h2>
+            </div>
+        </div>
+
+        
+        <div class="video-section">
+            <button class="arrow left-arrow" onclick="previousPage()"><i class='bx bxs-left-arrow'></i></button> <!-- Left Arrow -->
+            
+            <div class="video-wrapper">
+                <iframe 
+                    id="video-frame"
+                    src="https://www.youtube.com/embed/VIDEO_1" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            
+            <button class="arrow right-arrow" onclick="nextPage()"><i class='bx bxs-right-arrow' undefined ></i></button> <!-- Right Arrow -->
+        </div>
+
+    </div>
+    <div class="background-image" style="top: 0; left: 50% ; z-index: -10;">
+        <svg width="725" height="487" viewBox="0 0 725 487" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter0_f_116_135)">
+            <rect x="422.632" y="-121" width="291" height="288" transform="rotate(50.6266 422.632 -121)" fill="#6FC686"/>
+            </g>
+            <defs>
+            <filter id="filter0_f_116_135" x="0" y="-321" width="807.234" height="807.65" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+            <feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_116_135"/>
+            </filter>
+            </defs>
+            </svg>       
+    </div>
+    <div class="background-image" style="top: 17%; left: 79% ; z-index: -10;">
+        <svg width="415" height="808" viewBox="0 0 415 808" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter0_f_116_136)">
+            <rect x="422.632" y="200" width="291" height="288" transform="rotate(50.6266 422.632 200)" fill="#FB3B52"/>
+            </g>
+            <defs>
+            <filter id="filter0_f_116_136" x="-3.05176e-05" y="0" width="807.234" height="807.65" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+            <feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_116_136"/>
+            </filter>
+            </defs>
+            </svg>
+            
+    </div>
+
+    <div class="background-image" style="top: 3%; left: -2% ; z-index: -10;">
+        <svg width="383" height="787" viewBox="0 0 383 787" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter0_f_116_134)">
+            <rect x="-2.36804" y="179" width="291" height="288" transform="rotate(50.6266 -2.36804 179)" fill="#0177FB"/>
+            </g>
+            <defs>
+            <filter id="filter0_f_116_134" x="-425" y="-21" width="807.234" height="807.65" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+            <feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_116_134"/>
+            </filter>
+            </defs>
+            </svg>
+            
+    </div>
+    <div id="contact" class="footer">
+        <div class="footer-card top-left">
+            <div class="container">
+                <div class="card-content">
+                    <h2 class="card-title">CONTACT US</h2>
+                    <ul class="bullet-points">
+                        <li>Email: example@cse.com</li>
+                        <li>Phone Num: +213 777 77 77 77 77</li>
+                        <li>Address: ESI, Oued Smar, Algiers</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-card top-right">
+            <div class="container">
+                <div class="image-text-wrapper">
+                    <img src="assets/logoWhite.svg" alt="Description" class="card-image">
+                    <strong class="card-text">LE CLUB<br>SCIENTIFIQUE<br>DE L'ESI</strong>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-card bottom-left">
+            <div class="container">
+                <p class="quote">"Made with talent, to discover yours"</p>
+                </div>
+        </div>
+        <div class="footer-card bottom-right">
+            <div class="container">
+            <div class="countdown-container">
+                <div class="countdown">
+                    <div class="time-unit">
+                        <span id="days" class="number">00</span>
+                        <span class="label">Days</span>
+                    </div>
+                    <div class="time-unit">
+                        <span id="hours" class="number">00</span>
+                        <span class="label">Hours</span>
+                    </div>
+                    <div class="time-unit">
+                        <span id="minutes" class="number">00</span>
+                        <span class="label">Minutes</span>
+                    </div>
+                    <div class="time-unit">
+                        <span id="seconds" class="number">00</span>
+                        <span class="label">Seconds</span>
+                    </div>
+                    <span class="left-text">Left</span>
+                </div>
+                <a href="./registration.html" class="register-button">Buckle Up Now!</a>
+            </div>
+        </div>
+            
+        </div>
+
+    
+    </div>
+    <div class="background-image" style="height: 800px; width: 100%;  bottom: -18%;  background-image: url('assets/footer.png'); z-index: -10;"></div>
+    <script src="liveStream.js"></script>
+</body>
+</html>
